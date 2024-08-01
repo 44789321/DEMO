@@ -22,6 +22,9 @@ import { DashboardComponent } from './components/pages/dashboard/dashboard.compo
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/pages/home/home.component';
 import { CustomCurrencyPipe } from './shared/pipes/custom-currency.pipe';
+import { PrivacyComponent } from './components/pages/privacy/privacy.component';
+import { PivotComponent } from './components/pages/pivot/pivot.component';
+import { ClaimsComponent } from './components/pages/claims/claims.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { CustomCurrencyPipe } from './shared/pipes/custom-currency.pipe';
     DashboardComponent,
     HomeComponent,
     CustomCurrencyPipe,
+    PrivacyComponent,
+    PivotComponent,
+    ClaimsComponent,
   ],
   imports: [
     BrowserModule,

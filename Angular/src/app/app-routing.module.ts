@@ -6,12 +6,15 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { ToolbarComponent } from './components/pages/layouts/toolbar/toolbar.component';
 import { SettingsComponent } from './components/administration/settings/settings.component';
+import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 //-------------------------- Settings Components ----------------------------
 import { Page404Component } from './shared/components/page-404/page-404.component';
 //-------------------------- Guards ----------------------------
 import { adminGuard } from './shared/guards/admin.guard';
 import { authGuard } from './shared/guards/auth.guard';
 import { HomeComponent } from './components/pages/home/home.component';
+import { PivotComponent } from './components/pages/pivot/pivot.component';
+import { ClaimsComponent } from './components/pages/claims/claims.component';
 
 const routes: Routes = [
 
@@ -24,6 +27,10 @@ const routes: Routes = [
 
       // { path: 'dashboard', component: DashboardComponent },
       { path: 'home', component: HomeComponent },
+      { path: 'privacy', component: PrivacyComponent},
+      { path: 'dashboard', component: DashboardComponent},
+      { path: 'pivot', component: PivotComponent},
+      { path: 'claims', component: ClaimsComponent},
 
       {
         path: 'administration',

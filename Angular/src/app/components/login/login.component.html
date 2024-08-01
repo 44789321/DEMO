@@ -1,32 +1,55 @@
 <div class="w-full flex-center min-h-full">
-    <mat-card class="carder">
-        <mat-card-title style="text-align: center;"><h1>Login</h1></mat-card-title>
-        <hr>
-        <mat-card-content>
-            <form [formGroup]="clientCredentials" (ngSubmit)="login()" class="w-full flex-center">
-                <mat-form-field appearance="fill" class="w-full">
-                    <mat-label>Username</mat-label>
-                    <input matInput formControlName="username" placeholder="Username" maxlength="64">
-                </mat-form-field>
-                <mat-form-field appearance="fill" class="w-full">
-                    <mat-label>Password</mat-label>
-                    <input [type]="showPsw ? 'text' : 'password'" matInput formControlName="password"
-                        placeholder="Password" maxlength="45">
-                    <button mat-icon-button matSuffix type="button" (click)="showPsw = !showPsw"
-                        style="margin-right: 8px;">
-                        <mat-icon>{{showPsw ? 'visibility' : 'visibility_off'}}</mat-icon>
-                    </button>
-                    <button *ngIf="clientCredentials.value.password" mat-icon-button matPrefix type="button"
-                        (click)="handleClear()">
-                        <mat-icon>close</mat-icon>
-                    </button>
-                </mat-form-field>
-                <div class="containerFit">
-                    <button type="submit" mat-raised-button color="primary">
-                        <mat-icon>done</mat-icon> Ingresar
-                    </button>
-                </div>
-            </form>
-        </mat-card-content>
-    </mat-card>
+  <mat-card class="carder">
+    <mat-card-title class="txtClipped"><h1>Login</h1></mat-card-title>
+    <hr />
+    <mat-card-content>
+      <form
+        [formGroup]="clientCredentials"
+        (ngSubmit)="login()"
+        class="w-full flex-center"
+      >
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            formControlName="username"
+            placeholder="Username"
+            maxlength="64"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Password</mat-label>
+          <input
+            [type]="showPsw ? 'text' : 'password'"
+            matInput
+            formControlName="password"
+            placeholder="Password"
+            maxlength="45"
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            type="button"
+            (click)="showPsw = !showPsw"
+          >
+            <mat-icon>{{ showPsw ? "visibility" : "visibility_off" }}</mat-icon>
+          </button>
+          <button
+            *ngIf="clientCredentials.value.password"
+            mat-icon-button
+            matPrefix
+            type="button"
+            (click)="handleClear()"
+          >
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <div class="containerFit">
+          <button type="submit" mat-raised-button color="primary">
+            <mat-icon>done</mat-icon> Ingresar
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
 </div>
