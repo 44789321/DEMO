@@ -23,11 +23,11 @@ export class ContextService {
 
   setInformation(data?: any) {
     if (data) {
-      localStorage.setItem('id', data.id);
+      localStorage.setItem('id', data.id_person);
       localStorage.setItem('first_name', data.first_name);
       localStorage.setItem('last_name', data.last_name);
       localStorage.setItem('email', data.email);
-      localStorage.setItem('roles', JSON.parse(data.role));
+      localStorage.setItem('roles', JSON.stringify(data.role));
     }
   }
 
