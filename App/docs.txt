@@ -1,0 +1,19 @@
+
+############################ ISSUES ################################
+
+-------------------- GCloud deploy ----------------------------------
+
+1.- Pararme sobre la carpeta Angular
+2.- Ejecutar el comando "ng build"
+3.- Copiar la carpeta completa de Angular/dist/infomedia => App/angular/dist/infomedia
+4.- Pararme en la carpeta App
+5.- Ejecutar el comando "gcloud run deploy wre-poc-service;"
+    a.- Cuando solicite la ruta source code location, simplemente dar enter
+    b.- Servidor, actualmente esta usando el "32.- US-Cental.1" pero puede cambiar en cualquier momento
+    c.- Esperar el deploy, tarda aproximadamente 1 a 2 minutos
+    I.- En caso de dar error de credenciales seguir los pasos de "GCloud credentials"
+
+-------------------- GCloud credentials ---------------------------
+En caso de error de credenciales ejecutar el siguiente comando con la ruta del json de credenciales, Git protege esta parte y no permite subirlo. 
+
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/lenininfomedia/Documents/Repos/API_WRE/wre-poc-f25a5217302f.json"
