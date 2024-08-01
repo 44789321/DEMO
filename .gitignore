@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Angular ignores
+Angular/node_modules/*
+Angular/.angular/*
+
+# Node ignores
+App/node_modules/*

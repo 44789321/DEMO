@@ -1,0 +1,70 @@
+<!---------------toolbar----------------------->
+<mat-toolbar class="topBar">
+  <button mat-icon-button type="button" (click)="opened = !opened">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div style="text-align: center;">
+    <img src="assets/img/logoUpset.png" class="toolbar-logo">
+    <h1>UpLink</h1>
+  </div>
+  <span class="spacer"></span>
+  <!-- <button mat-icon-button [matMenuTriggerFor]="profileMenu" *ngIf="isAuth"><mat-icon>profile</mat-icon></button>
+        <mat-menu #profileMenu="matMenu" class="overflow-hidden">
+            <button mat-menu-item routerLink="/administracion" (click)="opened = false">
+                <mat-icon>admin_panel_settings</mat-icon> Administración
+            </button>
+            <button mat-menu-item style="color: red;" (click)="logout()">
+                <mat-icon style="color: red;">logout</mat-icon> Salir
+            </button>
+        </mat-menu>
+        <button mat-icon-button [matMenuTriggerFor]="profileMenu" *ngIf="!isAuth"><mat-icon>login</mat-icon></button>
+        <button mat-icon-button matTooltip="Opciones de perfil" [matMenuTriggerFor]="menuProfile">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menuProfile="matMenu">
+            <div style="overflow: hidden;">
+                <button mat-menu-item (click)="openModalProfile()">
+                    <mat-icon>person</mat-icon>Perfil
+                </button>
+                <button mat-menu-item *ngIf="isAuth" (click)="logout()" style="color: red;">
+                    <mat-icon style="color: red;">logout</mat-icon> Cerrar sesión
+                </button>
+            </div>
+        </mat-menu> -->
+</mat-toolbar>
+
+<!---------------sidenav----------------------->
+
+<mat-sidenav-container autosize [hasBackdrop]="true">
+  <mat-sidenav #sidenav [(opened)]="opened" mode="push">
+    <mat-nav-list>
+      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+        <div class="flex-center list-item-label">
+          <mat-icon>home</mat-icon> &nbsp;
+          <h3 class="">Home</h3>
+        </div>
+      </a>
+      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+        <div class="flex-center list-item-label">
+          <mat-icon>pivot_table_chart</mat-icon> &nbsp;
+          <h3 class="">Pivot</h3>
+        </div>
+      </a>
+      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+        <div class="flex-center list-item-label">
+          <mat-icon>rate_review</mat-icon> &nbsp;
+          <h3 class="">Claims</h3>
+        </div>
+      </a>
+      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+        <div class="flex-center list-item-label">
+          <mat-icon>emoji_people</mat-icon> &nbsp;
+          <h3 class="">About us</h3>
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="routerContainer">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
