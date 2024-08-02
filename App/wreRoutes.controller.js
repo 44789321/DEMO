@@ -52,8 +52,6 @@ const login = async (req, res) => {
     }
 }
 
-
-
 const getClaims = async (req, res) => {
     try {
         const bigquery = new BigQuery();
