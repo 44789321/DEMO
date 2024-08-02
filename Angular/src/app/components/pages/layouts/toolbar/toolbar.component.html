@@ -3,10 +3,13 @@
   <button mat-icon-button type="button" (click)="opened = !opened">
     <mat-icon>menu</mat-icon>
   </button>
-  <div style="text-align: center;">
-    <img src="assets/img/logoUpset.png" class="toolbar-logo">
+  <div style="text-align: center">
+    <img src="assets/img/logoUpset.png" class="toolbar-logo" />
     <h1>UpLink</h1>
   </div>
+  <button class="Buttontop" type="submit" mat-raised-button color="warn">
+    <mat-icon>logout</mat-icon> Logout
+  </button>
   <span class="spacer"></span>
   <!-- <button mat-icon-button [matMenuTriggerFor]="profileMenu" *ngIf="isAuth"><mat-icon>profile</mat-icon></button>
         <mat-menu #profileMenu="matMenu" class="overflow-hidden">
@@ -38,28 +41,70 @@
 <mat-sidenav-container autosize [hasBackdrop]="true">
   <mat-sidenav #sidenav [(opened)]="opened" mode="push">
     <mat-nav-list>
-      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/home"
+        (click)="opened = !opened"
+      >
         <div class="flex-center list-item-label">
           <mat-icon>home</mat-icon> &nbsp;
           <h3 class="">Home</h3>
         </div>
       </a>
-      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/pivot"
+        (click)="opened = !opened"
+      >
         <div class="flex-center list-item-label">
           <mat-icon>pivot_table_chart</mat-icon> &nbsp;
           <h3 class="">Pivot</h3>
         </div>
       </a>
-      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/claims"
+        (click)="opened = !opened"
+      >
         <div class="flex-center list-item-label">
           <mat-icon>rate_review</mat-icon> &nbsp;
           <h3 class="">Claims</h3>
         </div>
       </a>
-      <a class="hvr" mat-list-item routerLink="/home" (click)="opened = !opened">
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/home"
+        (click)="opened = !opened"
+      >
         <div class="flex-center list-item-label">
           <mat-icon>emoji_people</mat-icon> &nbsp;
           <h3 class="">About us</h3>
+        </div>
+      </a>
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/dashboard"
+        (click)="opened = !opened"
+      >
+        <div class="flex-center list-item-label">
+          <mat-icon>dashboard</mat-icon> &nbsp;
+          <h3 class="">Dashboard</h3>
+        </div>
+      </a>
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/privacy"
+        (click)="opened = !opened"
+      >
+        <div class="flex-center list-item-label">
+          <mat-icon>privacy_tip</mat-icon> &nbsp;
+          <h3 class="">Privacy Policy</h3>
         </div>
       </a>
     </mat-nav-list>
