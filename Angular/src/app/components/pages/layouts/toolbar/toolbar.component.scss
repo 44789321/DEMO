@@ -11,16 +11,16 @@ mat-sidenav {
   cursor: pointer;
   position: absolute;
   // right: 0;
-  margin-top: 58px;
+  margin-top: 64px;
   z-index: 9999999999;
-  min-height: calc(100vh - 58px);
+  min-height: calc(100vh - 64px);
 }
 
 body,
 html,
 .routerContainer {
   margin-top: 58px;
-  min-height: calc(100vh - 58px);
+  min-height: calc(100vh - 64px);
 }
 
 .routerContainer {
@@ -48,11 +48,4 @@ html,
   max-width: 95%;
   overflow: hidden;
   object-fit: contain;
-}
-
-.Buttontop {
-  position: absolute;
-  right: 16px; 
-  top: 50%;
-  transform: translateY(-50%); 
 }

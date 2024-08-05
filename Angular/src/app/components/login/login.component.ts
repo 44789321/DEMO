@@ -41,7 +41,6 @@ export class LoginComponent {
     this._service.login(clientCredentials).subscribe((resp: Resultado) => {
       if (resp.Exito == 'true') {
         localStorage.clear();
-        this._context.SesionId();
         this._context.setInformation(resp.Data[0]);
         this.toastr.success(`Hola ${resp.Data[0].first_name} ${resp.Data[0].last_name}`, 'Bienvenido');
         this.router.navigate(['/home']);

@@ -5,12 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class ContextService {
 
-  public userInfo: any;
-  public menu: any[] = [];
-  public perfilamiento: any;
-  public filtros: any;
-  public idSesion: string = '';
-
   constructor() {
   }
 
@@ -31,24 +25,7 @@ export class ContextService {
     }
   }
 
-  SesionId() {
-    if (this.idSesion)
-      return this.idSesion;
-    let valIdSesion = localStorage.getItem('sesion');
-    if (valIdSesion || valIdSesion != null)
-      this.idSesion = valIdSesion;
-    else {
-      // this.idSesion = uuid.v4();
-      localStorage.setItem('sesion', this.idSesion);
-    }
-    return this.idSesion;
-  }
-
   logout() {
-    this.userInfo = undefined;
-    this.perfilamiento = undefined;
-    this.menu = [];
-    this.idSesion = '';
-    this.filtros = undefined;
+    localStorage.clear();
   }
 }

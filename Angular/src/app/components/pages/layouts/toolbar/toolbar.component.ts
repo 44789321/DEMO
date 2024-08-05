@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { ContextService } from 'src/app/services/services/context.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -12,13 +13,16 @@ export class ToolbarComponent {
   isAuth = false;
 
   constructor(private toatr: ToastrService,
-    private router: Router) {}
+    private router: Router,
+    private _context: ContextService) {}
 
     openModalProfile() {
 
     }
     
   logout() {
+    this._context.logout();
     this.toatr.info('Se ha cerrado la sesión', 'Hasta luego');
+    this.router.navigate(['/login']);
   }
 }
