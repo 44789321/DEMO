@@ -9,6 +9,7 @@ import { MainService } from 'src/app/services/services/main.service';
 import { MaterialsModule } from '../materials/materials.module';
 import { BuscadorGenericoPipe } from '../pipes/buscador-generico.pipe';
 import { CardPipe } from '../pipes/card.pipe';
+import { JobDetailsComponent } from '../components/job-details/job-details.component';
 
 
 const modules = [
@@ -24,6 +25,7 @@ const GenericComponents = [
   BuscadorGenericoPipe,
   CardPipe,
   Page404Component,
+  JobDetailsComponent
 ]
 
 @NgModule({

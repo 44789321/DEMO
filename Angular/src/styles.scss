@@ -1,4 +1,3 @@
-
 html,
 body {
     height: 100vh;
@@ -10,6 +9,11 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+    --primary-color: #3f51b5;
+    --secondary-color: #2ecc71;
 }
 
 mat-card {
@@ -24,7 +28,8 @@ mat-card-title {
 }
 
 button {
-  border-radius: 8px !important;
+    border-radius: 8px ;
+    transition: all 150ms ease-in-out;
 }
 
 .containerFit {
@@ -66,7 +71,6 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    transition: 150ms ease-in-out;
 }
 
 .searcherInput {
@@ -103,27 +107,27 @@ button:hover {
 }
 
 .w-50 {
-  width: 50%;
+    width: 50%;
 }
 
 .w-49 {
-  width: 49%;
+    width: 49%;
 }
 
 .w-75 {
-  width: 75%;
+    width: 75%;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .border-b-black {
-  border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .border-b-gray {
-  border-bottom: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .btnSuccess {
@@ -138,7 +142,7 @@ button:hover {
 }
 
 .min-h-full {
-  min-height: 99vh;
+    min-height: 99vh;
 }
 
 .center-screen {
@@ -147,5 +151,7 @@ button:hover {
     display: grid;
     place-items: center;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.flex-auto {
+    flex: 1 1 auto;
+}

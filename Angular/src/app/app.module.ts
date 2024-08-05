@@ -25,6 +25,8 @@ import { CustomCurrencyPipe } from './shared/pipes/custom-currency.pipe';
 import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
+import { RecomendationsComponent } from './components/pages/recomendations/recomendations.component';
+import { OtherRecommendationsComponent } from './components/pages/recomendations/other-recommendations/other-recommendations.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { ClaimsComponent } from './components/pages/claims/claims.component';
     PrivacyComponent,
     PivotComponent,
     ClaimsComponent,
+    RecomendationsComponent,
+    OtherRecommendationsComponent,
   ],
   imports: [
     BrowserModule,

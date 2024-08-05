@@ -1,0 +1,73 @@
+.txtRecommendations {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.topRecommendedCard {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.headerRecommended {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+}
+
+.bodyRecommended {
+    padding: 1rem;
+}
+
+.skillsContainer {
+    gap: 2rem;
+    justify-content: left;
+}
+
+.btnMinFb {
+    border-radius: 50% !important;
+    transform: translateY(0.4rem);
+    background-color: var(--primary-color);
+    // margin-top: 0.5rem;
+}
+
+.gradient-button {
+    background: linear-gradient(90deg, #a810d2, #1ea1f2);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 16rem;
+    top: 48%;
+    opacity: 0.6;
+
+    .txtBtn-gradient {
+        transform: translateY(3px);
+        margin-right: 0.5rem;
+    }
+}
+
+.gradient-button:hover {
+    opacity: 1.2;
+}
+
+.descrElipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+}
+
+.txt-other-recomm{
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.txt-other-recomm:hover {
+    scale: 1.05;
+    cursor: pointer;
+}

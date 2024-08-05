@@ -25,4 +25,8 @@ export class MainService {
   getClaims(): Observable<Resultado> {
     return this.http.get<Resultado>(this.UrlBase + '/api/wre-poc/v1/claims/' + Number(localStorage.getItem('id')));
   }
+
+  getJobDetails(idJob: string): Observable<Resultado> {
+    return this.http.get<Resultado>(this.UrlBase + '/api/wre-poc/v1/jobs/' + idJob);
+  }
 }

@@ -1,0 +1,14 @@
+<div class="w-full flex-center">
+    <div class="w-full flex-center">
+        <mat-form-field appearance="outline">
+            <span matPrefix class="prefixSpan">Sort by:</span>
+            <mat-select>
+                <mat-option *ngFor="let srt of sorters" [value]="srt.id">
+                    {{srt.desc}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <span class="flex-auto"></span>
+        <button mat-stroked-button class="btnFilters"><mat-icon>tune</mat-icon> Filters</button>
+    </div>
+</div>

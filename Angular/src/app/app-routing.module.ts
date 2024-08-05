@@ -15,6 +15,8 @@ import { authGuard } from './shared/guards/auth.guard';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
+import { RecomendationsComponent } from './components/pages/recomendations/recomendations.component';
+import { JobDetailsComponent } from './shared/components/job-details/job-details.component';
 
 const routes: Routes = [
 
@@ -31,6 +33,8 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent},
       { path: 'pivot', component: PivotComponent},
       { path: 'claims', component: ClaimsComponent},
+      { path: 'recommendations', component: RecomendationsComponent},
+      { path: 'jobs/:id', component: JobDetailsComponent},
 
       {
         path: 'administration',

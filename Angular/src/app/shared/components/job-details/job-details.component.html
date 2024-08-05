@@ -1,0 +1,47 @@
+<div class="w-full flex-center min-h-full">
+    <div class="w-75">
+        <div class="w-full flex-center">
+            <h1 class="jobTitle">{{jobDetail.title}}</h1>
+            <span class="spacer"></span>
+            <button type="button" mat-button color="primary"><mat-icon>share</mat-icon>Share</button>
+        </div>
+        <div class="w-full flex-center" style="margin-top: 1rem;">
+            <div class="w-50 descriptContainer">
+                <h2>{{jobDetail.description}}</h2>
+            </div>
+            <div class="w-50 flex-center mediaContainer">
+                <img src="assets/img/Logistician.jpg">
+            </div>
+        </div>
+        <mat-card class="w-full cardInterested">
+            <h1 class="w-full txtInterested" style="color: white;">
+                Are you interested in being a {{jobDetail.title}} ?
+            </h1>
+            <div class="w-full flex-center actionsContainer">
+                <div class="action-resp yes-resp flex-center">
+                    <div class="top-feeling happy">
+                        <mat-icon>mood</mat-icon>
+                    </div>
+                    <h1 class="w-75" style="font-size:3rem;">Yes!</h1>
+                    <h3>Show me my traininig options!</h3>
+                </div>
+                <div class="action-resp maybe-resp flex-center">
+                    <div class="top-feeling neutral">
+                        <mat-icon>sentiment_neutral</mat-icon>
+                    </div>
+                    <h1 class="w-75" style="font-size:3rem;">Maybe</h1>
+                    <h3>I have questions or need help</h3>
+                </div>
+                <div class="action-resp no-resp flex-center">
+                    <div class="top-feeling sad">
+                        <mat-icon>sentiment_dissatisfied</mat-icon>
+                    </div>
+                    <h1 class="w-75" style="font-size:3rem;">No</h1>
+                    <h3>I'm not interested in this job</h3>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
+
+<button mat-fab class="downLButton" color="accent" (click)="handleBack()"><mat-icon>arrow_back</mat-icon></button>
