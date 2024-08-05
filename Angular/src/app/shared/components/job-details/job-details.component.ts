@@ -39,7 +39,12 @@ export class JobDetailsComponent {
   }
 
   handleBack() {
-    this.router.navigate(['/recommendations'])
+    this.router.navigate(['/recommendations']);
+  }
+
+  handleReady() {
+    
+    this.router.navigate([`/jobs/${this.idJob}/ready`]);
   }
 
 }

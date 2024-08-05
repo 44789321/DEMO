@@ -27,6 +27,9 @@ import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
 import { RecomendationsComponent } from './components/pages/recomendations/recomendations.component';
 import { OtherRecommendationsComponent } from './components/pages/recomendations/other-recommendations/other-recommendations.component';
+import { VistaComponent } from './components/pages/vista/vista.component';
+import { ReadyComponent } from './components/pages/ready/ready.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { OtherRecommendationsComponent } from './components/pages/recomendations
     PivotComponent,
     ClaimsComponent,
     RecomendationsComponent,
-    OtherRecommendationsComponent,
+    OtherRecommendationsComponent, 
+    VistaComponent, 
+    ReadyComponent
   ],
   imports: [
     BrowserModule,

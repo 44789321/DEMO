@@ -15,6 +15,8 @@ import { authGuard } from './shared/guards/auth.guard';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
+import { VistaComponent } from './components/pages/vista/vista.component';
+import { ReadyComponent } from './components/pages/ready/ready.component';
 import { RecomendationsComponent } from './components/pages/recomendations/recomendations.component';
 import { JobDetailsComponent } from './shared/components/job-details/job-details.component';
 
@@ -28,13 +30,14 @@ const routes: Routes = [
     children: [
 
       // { path: 'dashboard', component: DashboardComponent },
-      { path: 'home', component: HomeComponent },
+      { path: 'home', component: VistaComponent },
       { path: 'privacy', component: PrivacyComponent},
       { path: 'dashboard', component: DashboardComponent},
       { path: 'pivot', component: PivotComponent},
       { path: 'claims', component: ClaimsComponent},
       { path: 'recommendations', component: RecomendationsComponent},
       { path: 'jobs/:id', component: JobDetailsComponent},
+      { path: 'jobs/:id/ready', component: ReadyComponent},
 
       {
         path: 'administration',
