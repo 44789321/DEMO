@@ -15,6 +15,8 @@ import { authGuard } from './shared/guards/auth.guard';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
+import { VistaComponent } from './components/pages/vista/vista.component';
+import { ReadyComponent } from './components/pages/ready/ready.component';
 
 const routes: Routes = [
 
@@ -31,6 +33,9 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent},
       { path: 'pivot', component: PivotComponent},
       { path: 'claims', component: ClaimsComponent},
+      { path: 'vista', component: VistaComponent},
+      { path: 'ready', component: ReadyComponent},
+
 
       {
         path: 'administration',

@@ -45,10 +45,10 @@
       </thead>
       <tbody>
         <tr *ngFor="let claim of claims" class="hvrPush">
-          <td>{{ claim.claim_status }}</td>
+          <td>{{ claim.status }}</td>
           <td>{{ claim.program }}</td>
-          <td>{{ claim.BYE.value }}</td>
-          <td>{{ claim.paid_to_date | customCurrency }}</td>
+          <td>{{ claim.bye }}</td>
+          <td>{{ claim.paidDate | customCurrency }}</td>
           <td>{{ claim.mba | customCurrency }}</td>
           <td>{{ claim.wba | customCurrency }}</td>
           <td>{{ claim.rba | customCurrency }}</td>

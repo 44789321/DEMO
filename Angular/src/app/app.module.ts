@@ -25,6 +25,10 @@ import { CustomCurrencyPipe } from './shared/pipes/custom-currency.pipe';
 import { PrivacyComponent } from './components/pages/privacy/privacy.component';
 import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
+import {MatButtonModule} from '@angular/material/button';
+import { VistaComponent } from './components/pages/vista/vista.component';
+import { ReadyComponent } from './components/pages/ready/ready.component';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +42,8 @@ import { ClaimsComponent } from './components/pages/claims/claims.component';
     PrivacyComponent,
     PivotComponent,
     ClaimsComponent,
+    VistaComponent,
+    ReadyComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +52,7 @@ import { ClaimsComponent } from './components/pages/claims/claims.component';
     AppRoutingModule,
     CommonModule,
     SharedModule,
+    MatButtonModule,
   ],
   providers: [
     ContextService,

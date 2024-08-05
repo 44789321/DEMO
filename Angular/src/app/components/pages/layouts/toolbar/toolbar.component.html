@@ -107,6 +107,17 @@
           <h3 class="">Privacy Policy</h3>
         </div>
       </a>
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/vista"
+        (click)="opened = !opened"
+      >
+        <div class="flex-center list-item-label">
+          <mat-icon>preview</mat-icon> &nbsp;
+          <h3 class="">View</h3>
+        </div>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="routerContainer">
