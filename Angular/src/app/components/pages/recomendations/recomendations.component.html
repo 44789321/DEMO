@@ -26,10 +26,10 @@
                     <mat-icon>arrow_forward</mat-icon></button>
             </div>
         </div>
-        <div class="w-full" style="margin-top: 2rem;">
+        <div class="w-full" style="margin-top: 2rem;" >
             <div class="w-full" style="text-align: center;">
+                <app-other-recommendations *ngIf="!bShowOtherRecomm"></app-other-recommendations>
                 <h3 class="txt-other-recomm" (click)="bShowOtherRecomm = !bShowOtherRecomm">{{ bShowOtherRecomm ? 'Show' : 'Hidde'}} 13 other recommendations</h3>
-                <app-other-recommendations></app-other-recommendations>
             </div>
         </div>
     </div>

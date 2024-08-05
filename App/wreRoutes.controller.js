@@ -41,7 +41,6 @@ const login = async (req, res) => {
         };
         const [job] = await bigquery.createQueryJob(options);
         const [rows] = await job.getQueryResults();
-        console.log(rows.length)
         if (rows.length <= 0)
             return res.status(401).json({ Exito: "false", mensaje: "Invalid email/password", Data: {} })
         else

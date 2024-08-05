@@ -19,6 +19,7 @@ import { VistaComponent } from './components/pages/vista/vista.component';
 import { ReadyComponent } from './components/pages/ready/ready.component';
 import { RecomendationsComponent } from './components/pages/recomendations/recomendations.component';
 import { JobDetailsComponent } from './shared/components/job-details/job-details.component';
+import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
 
 const routes: Routes = [
 
@@ -38,6 +39,9 @@ const routes: Routes = [
       { path: 'recommendations', component: RecomendationsComponent},
       { path: 'jobs/:id', component: JobDetailsComponent},
       { path: 'jobs/:id/ready', component: ReadyComponent},
+      { path: 'vista', component: VistaComponent},
+      { path: 'ready', component: ReadyComponent}, 
+      { path: 'information-sent', component: InformationSentComponent}, 
 
       {
         path: 'administration',

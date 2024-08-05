@@ -29,6 +29,7 @@ import { RecomendationsComponent } from './components/pages/recomendations/recom
 import { OtherRecommendationsComponent } from './components/pages/recomendations/other-recommendations/other-recommendations.component';
 import { VistaComponent } from './components/pages/vista/vista.component';
 import { ReadyComponent } from './components/pages/ready/ready.component';
+import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
 
 
 @NgModule({
@@ -46,7 +47,7 @@ import { ReadyComponent } from './components/pages/ready/ready.component';
     RecomendationsComponent,
     OtherRecommendationsComponent, 
     VistaComponent, 
-    ReadyComponent
+    ReadyComponent, InformationSentComponent
   ],
   imports: [
     BrowserModule,

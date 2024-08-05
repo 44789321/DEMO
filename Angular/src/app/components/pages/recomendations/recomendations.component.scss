@@ -42,16 +42,11 @@
     position: absolute;
     right: 16rem;
     top: 48%;
-    opacity: 0.6;
 
     .txtBtn-gradient {
         transform: translateY(3px);
         margin-right: 0.5rem;
     }
-}
-
-.gradient-button:hover {
-    opacity: 1.2;
 }
 
 .descrElipsis {
