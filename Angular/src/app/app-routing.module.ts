@@ -17,6 +17,9 @@ import { PivotComponent } from './components/pages/pivot/pivot.component';
 import { ClaimsComponent } from './components/pages/claims/claims.component';
 import { VistaComponent } from './components/pages/vista/vista.component';
 import { ReadyComponent } from './components/pages/ready/ready.component';
+//-------------------------Shared--------------------------------------
+import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
+import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
 
 const routes: Routes = [
 
@@ -35,6 +38,8 @@ const routes: Routes = [
       { path: 'claims', component: ClaimsComponent},
       { path: 'vista', component: VistaComponent},
       { path: 'ready', component: ReadyComponent},
+      { path: 'scorecard', component: ScoreCardComponent},
+      { path: 'individual', component: IndividualScoreCardComponent},
 
 
       {

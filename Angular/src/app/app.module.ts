@@ -28,6 +28,9 @@ import { ClaimsComponent } from './components/pages/claims/claims.component';
 import {MatButtonModule} from '@angular/material/button';
 import { VistaComponent } from './components/pages/vista/vista.component';
 import { ReadyComponent } from './components/pages/ready/ready.component';
+import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
+import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
+
 
 
 @NgModule({
@@ -44,6 +47,8 @@ import { ReadyComponent } from './components/pages/ready/ready.component';
     ClaimsComponent,
     VistaComponent,
     ReadyComponent,
+    ScoreCardComponent,
+    IndividualScoreCardComponent,
   ],
   imports: [
     BrowserModule,
