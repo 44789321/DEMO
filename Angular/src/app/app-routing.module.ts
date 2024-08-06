@@ -23,6 +23,7 @@ import { InformationSentComponent } from './components/pages/ready/information-s
 //-------------------------Shared--------------------------------------
 import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
 import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
+import { IndividualScoreWageComponent } from './shared/components/individual-score-wage/individual-score-wage.component';
 
 const routes: Routes = [
 
@@ -46,6 +47,7 @@ const routes: Routes = [
       { path: 'jobs/:id/information-sent', component: InformationSentComponent},       
       { path: 'scorecard', component: ScoreCardComponent},
       { path: 'individual', component: IndividualScoreCardComponent},
+      { path: 'wage', component: IndividualScoreWageComponent},
 
 
       {

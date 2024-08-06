@@ -32,6 +32,9 @@ import { ReadyComponent } from './components/pages/ready/ready.component';
 import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
 import { ModalChangeReadyInfoComponent } from './components/pages/ready/modal-change-ready-info/modal-change-ready-info.component';
 import { PhoneNumberPipe } from './shared/pipes/phone-number.pipe';
+import { IndividualScoreWageComponent } from './shared/components/individual-score-wage/individual-score-wage.component';
+import { TrainingComponent } from './shared/components/training/training.component';
+import { IndividualScoreDemandComponent } from './shared/components/individual-score-demand/individual-score-demand.component';
 
 
 
@@ -54,6 +57,9 @@ import { PhoneNumberPipe } from './shared/pipes/phone-number.pipe';
     InformationSentComponent,
     ModalChangeReadyInfoComponent,
     PhoneNumberPipe,
+    IndividualScoreWageComponent,
+    TrainingComponent,
+    IndividualScoreDemandComponent,
   ],
   imports: [
     BrowserModule,
