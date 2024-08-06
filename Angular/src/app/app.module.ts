@@ -30,6 +30,9 @@ import { OtherRecommendationsComponent } from './components/pages/recomendations
 import { VistaComponent } from './components/pages/vista/vista.component';
 import { ReadyComponent } from './components/pages/ready/ready.component';
 import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
+import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
+import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
+
 
 
 @NgModule({
@@ -47,7 +50,10 @@ import { InformationSentComponent } from './components/pages/ready/information-s
     RecomendationsComponent,
     OtherRecommendationsComponent, 
     VistaComponent, 
-    ReadyComponent, InformationSentComponent
+    ReadyComponent, 
+    InformationSentComponent,
+    ScoreCardComponent,
+    IndividualScoreCardComponent,
   ],
   imports: [
     BrowserModule,

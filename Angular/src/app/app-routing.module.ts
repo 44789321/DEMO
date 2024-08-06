@@ -20,6 +20,9 @@ import { ReadyComponent } from './components/pages/ready/ready.component';
 import { RecomendationsComponent } from './components/pages/recomendations/recomendations.component';
 import { JobDetailsComponent } from './shared/components/job-details/job-details.component';
 import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
+//-------------------------Shared--------------------------------------
+import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
+import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
 
 const routes: Routes = [
 
@@ -41,7 +44,10 @@ const routes: Routes = [
       { path: 'jobs/:id/ready', component: ReadyComponent},
       { path: 'vista', component: VistaComponent},
       { path: 'ready', component: ReadyComponent}, 
-      { path: 'information-sent', component: InformationSentComponent}, 
+      { path: 'information-sent', component: InformationSentComponent},       
+      { path: 'scorecard', component: ScoreCardComponent},
+      { path: 'individual', component: IndividualScoreCardComponent},
+
 
       {
         path: 'administration',
