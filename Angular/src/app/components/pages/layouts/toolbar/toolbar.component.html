@@ -118,6 +118,17 @@
           <h3 class="">View</h3>
         </div>
       </a>
+      <a
+        class="hvr"
+        mat-list-item
+        routerLink="/ready"
+        (click)="opened = !opened"
+      >
+        <div class="flex-center list-item-label">
+          <mat-icon>done_outline</mat-icon> &nbsp;
+          <h3 class="">Ready</h3>
+        </div>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="routerContainer">
