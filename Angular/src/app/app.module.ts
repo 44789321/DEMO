@@ -32,6 +32,9 @@ import { ReadyComponent } from './components/pages/ready/ready.component';
 import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
 import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
 import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
+import { IndividualScoreWageComponent } from './shared/components/individual-score-wage/individual-score-wage.component';
+import { TrainingComponent } from './shared/components/training/training.component';
+import { IndividualScoreDemandComponent } from './shared/components/individual-score-demand/individual-score-demand.component';
 
 
 
@@ -54,6 +57,9 @@ import { IndividualScoreCardComponent } from './shared/components/individual-sco
     InformationSentComponent,
     ScoreCardComponent,
     IndividualScoreCardComponent,
+    IndividualScoreWageComponent,
+    TrainingComponent,
+    IndividualScoreDemandComponent,
   ],
   imports: [
     BrowserModule,
