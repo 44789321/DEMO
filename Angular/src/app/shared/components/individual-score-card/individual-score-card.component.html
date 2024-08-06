@@ -1,11 +1,11 @@
-<mat-card class="score-card">
+<mat-card class="score-card" (click)="handlRoute()">
   <mat-card-content>
     <p class="name">{{name}}</p>
     <div class="score-container">
       <div *ngFor="let bar of bars; let i = index" [ngClass]="getBarClass(i)">
         &nbsp;
       </div>
-      <span class="score-text">{{ score }}/10</span>
+      <span class="score-text">{{ formatToTwoDecimals(score) }}/10</span>
     </div>
   </mat-card-content>
 </mat-card>

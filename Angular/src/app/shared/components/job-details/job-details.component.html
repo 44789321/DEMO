@@ -1,5 +1,5 @@
 <div class="w-full flex-center min-h-full">
-    <div class="w-75">
+    <div class="w-75" style="margin-top: 2rem;">
         <div class="w-full flex-center">
             <h1 class="jobTitle">{{jobDetail.title}}</h1>
             <span class="spacer"></span>
@@ -12,6 +12,13 @@
             <div class="w-50 flex-center mediaContainer">
                 <img src="assets/img/Logistician.jpg">
             </div>
+        </div>
+        <div class="w-full flex-center scoreCardsContainer">
+            <app-individual-score-card name="Recommendation score" [score]="scoreCard.recommendation_score"></app-individual-score-card>
+            <app-individual-score-card name="Wage" [score]="scoreCard.mean_quarterly_wage_hourly"></app-individual-score-card>
+            <app-individual-score-card name="Training duration" [score]="scoreCard.program_length_weeks"></app-individual-score-card>
+            <app-individual-score-card name="Training completion" [score]="(scoreCard.training_success_rate * 10)"></app-individual-score-card>
+            <app-individual-score-card name="Job demand" [score]="3"></app-individual-score-card>
         </div>
         <mat-card class="w-full cardInterested">
             <h1 class="w-full txtInterested" style="color: white;">

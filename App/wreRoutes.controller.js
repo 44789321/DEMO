@@ -68,8 +68,48 @@ const getClaims = async (req, res) => {
     }
 }
 
+const getOtherRecommendations = async (req, res) => {
+    try {
+        let table;
+        if (req.params.idUser == 1) table = 'Medical Assistants';
+        if (req.params.idUser == 2) table = 'Structural Metal Fabricators and Fitters';
+        else table = 'First-Line Supervisors of Retail Sales Workers';
+        const bigquery = new BigQuery();
+        const query = `SELECT * FROM WREdemo.ods_jobs_all
+                        WHERE previous_soc_title = '${table}'`;
+        const options = {
+            query: query,
+            location: 'US',
+        };
+        const [job] = await bigquery.createQueryJob(options);
+        const [rows] = await job.getQueryResults();
+        return ApiResponse(rows, res)
+    } catch (e) {
+        console.log(e)
+        return ApiResponse(null, res, 'Error al obtener los claims')
+    }
+}
+
+const getJobDetails = async (req, res) => {
+    try {
+        const bigquery = new BigQuery();
+        const query = `SELECT * FROM WREdemo.ods_jobs_all
+                        WHERE recommended_soc_code = ${req.params.idJob} LIMIT 1`;
+        const options = {
+            query: query,
+            location: 'US',
+        };
+        const [job] = await bigquery.createQueryJob(options);
+        const [rows] = await job.getQueryResults();
+        return ApiResponse(rows, res)
+    } catch (e) {
+        console.log(e)
+        return ApiResponse(null, res, 'Error al obtener los claims')
+    }
+}
+
 //#endregion
 
 module.exports = {
-    pruebaDeConexion, getDashboard, login, getClaims
+    pruebaDeConexion, getDashboard, login, getClaims, getOtherRecommendations, getJobDetails
 }

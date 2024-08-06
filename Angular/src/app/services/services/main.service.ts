@@ -29,4 +29,9 @@ export class MainService {
   getJobDetails(idJob: string): Observable<Resultado> {
     return this.http.get<Resultado>(this.UrlBase + '/api/wre-poc/v1/jobs/' + idJob);
   }
+
+  getOtherRecommendations(): Observable<Resultado> {
+    return this.http.get<Resultado>(this.UrlBase + '/api/wre-poc/v1/jobs/recommendations/' + Number(localStorage.getItem('id')));
+  }
+
 }

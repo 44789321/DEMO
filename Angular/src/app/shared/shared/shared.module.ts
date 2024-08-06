@@ -10,6 +10,8 @@ import { MaterialsModule } from '../materials/materials.module';
 import { BuscadorGenericoPipe } from '../pipes/buscador-generico.pipe';
 import { CardPipe } from '../pipes/card.pipe';
 import { JobDetailsComponent } from '../components/job-details/job-details.component';
+import { IndividualScoreCardComponent } from '../components/individual-score-card/individual-score-card.component';
+import { ScoreCardComponent } from '../components/score-card/score-card.component';
 
 
 const modules = [
@@ -25,7 +27,9 @@ const GenericComponents = [
   BuscadorGenericoPipe,
   CardPipe,
   Page404Component,
-  JobDetailsComponent
+  JobDetailsComponent,
+  IndividualScoreCardComponent,
+  ScoreCardComponent,
 ]
 
 @NgModule({

@@ -1,16 +1,24 @@
 .score-card {
-  width: 100%;
+  width: 400px;
+  max-width: 100%;
   padding: 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.score-card:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 .name {
   margin-bottom: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .score-container {

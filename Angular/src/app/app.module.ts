@@ -30,8 +30,8 @@ import { OtherRecommendationsComponent } from './components/pages/recomendations
 import { VistaComponent } from './components/pages/vista/vista.component';
 import { ReadyComponent } from './components/pages/ready/ready.component';
 import { InformationSentComponent } from './components/pages/ready/information-sent/information-sent.component';
-import { ScoreCardComponent } from './shared/components/score-card/score-card.component';
-import { IndividualScoreCardComponent } from './shared/components/individual-score-card/individual-score-card.component';
+import { ModalChangeReadyInfoComponent } from './components/pages/ready/modal-change-ready-info/modal-change-ready-info.component';
+import { PhoneNumberPipe } from './shared/pipes/phone-number.pipe';
 
 
 
@@ -52,8 +52,8 @@ import { IndividualScoreCardComponent } from './shared/components/individual-sco
     VistaComponent, 
     ReadyComponent, 
     InformationSentComponent,
-    ScoreCardComponent,
-    IndividualScoreCardComponent,
+    ModalChangeReadyInfoComponent,
+    PhoneNumberPipe,
   ],
   imports: [
     BrowserModule,

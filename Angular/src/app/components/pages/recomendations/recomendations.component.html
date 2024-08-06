@@ -1,6 +1,6 @@
 <div class="flex-center w-full min-h-full">
     <div class="w-75">
-        <div class="w-full flex-center">
+        <div class="w-full flex-center" style="margin-top: 3rem;">
             <h1 class="txtRecommendations">My recommendations</h1>
             <span class="spacer"></span>
             <div>
@@ -22,14 +22,17 @@
                         {{btnSk.desc}}
                     </div>
                 </div>
-                <button class="gradient-button flex-center" routerLink="/jobs/123"><span class="txtBtn-gradient">View details</span>
+                <button class="gradient-button flex-center" routerLink="/jobs/123"><span class="txtBtn-gradient">View
+                        details</span>
                     <mat-icon>arrow_forward</mat-icon></button>
             </div>
         </div>
-        <div class="w-full" style="margin-top: 2rem;" >
+        <div class="w-full" style="margin-top: 2rem;">
             <div class="w-full" style="text-align: center;">
-                <app-other-recommendations *ngIf="!bShowOtherRecomm"></app-other-recommendations>
-                <h3 class="txt-other-recomm" (click)="bShowOtherRecomm = !bShowOtherRecomm">{{ bShowOtherRecomm ? 'Show' : 'Hidde'}} 13 other recommendations</h3>
+                <app-other-recommendations *ngIf="!bShowOtherRecomm"
+                    [otherRecomendations]="otherRecomendations"></app-other-recommendations>
+                <h3 class="txt-other-recomm" (click)="bShowOtherRecomm = !bShowOtherRecomm">{{ bShowOtherRecomm ? 'Show'
+                    : 'Hide'}} {{otherRecomendations.length}} other recommendations</h3>
             </div>
         </div>
     </div>

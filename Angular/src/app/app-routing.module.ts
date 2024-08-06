@@ -43,8 +43,7 @@ const routes: Routes = [
       { path: 'jobs/:id', component: JobDetailsComponent},
       { path: 'jobs/:id/ready', component: ReadyComponent},
       { path: 'vista', component: VistaComponent},
-      { path: 'ready', component: ReadyComponent}, 
-      { path: 'information-sent', component: InformationSentComponent},       
+      { path: 'jobs/:id/information-sent', component: InformationSentComponent},       
       { path: 'scorecard', component: ScoreCardComponent},
       { path: 'individual', component: IndividualScoreCardComponent},
 

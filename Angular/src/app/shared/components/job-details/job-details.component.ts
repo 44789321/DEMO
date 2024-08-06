@@ -18,6 +18,7 @@ export class JobDetailsComponent {
     Logisticians play a crucial role in coordinating transportation, storage, and distribution, all aimed at optimizing the supply chain and 
     meeting customer demands. They utilize a range of tools and technologies to streamline operations and maximize efficiency across various industries.`
   };
+  scoreCard: any = {};
 
   constructor(private aRoute: ActivatedRoute,
     private toastr: ToastrService,
@@ -27,14 +28,14 @@ export class JobDetailsComponent {
     this.idJob = String(this.aRoute.snapshot.paramMap.get('id'));
   }
 
-  neOnInit() {
-    // this.getJobDetails();
+  ngOnInit() {
+    this.getJobDetails();
   }
 
   getJobDetails() {
     this._mainSvc.getJobDetails(this.idJob).subscribe((resp: any) => {
       if (resp.Exito == 'true')
-        this.jobDetail = resp.Data[0];
+        this.scoreCard = resp.Data[0];
     });
   }
 
