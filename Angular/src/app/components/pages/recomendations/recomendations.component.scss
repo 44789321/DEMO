@@ -39,9 +39,7 @@
     padding: 10px 30px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
-    position: absolute;
-    right: 16rem;
-    top: 48%;
+    transform: translate(65rem, -6rem);
 
     .txtBtn-gradient {
         transform: translateY(3px);
