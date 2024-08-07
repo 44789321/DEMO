@@ -12,8 +12,7 @@ export class ScoreCardComponent implements OnInit {
     score: number;
     wage: number;
     training: number;
-    //Modificar cuando este el verdadero caso de la demanda
-    demand: 'null' | 'NLJ/ETP' | 'CHE'; 
+    demand: 'Low demand' | 'High demand'; 
   }[] = [];
 
   constructor(private apiService: ApiService) {}
@@ -29,19 +28,17 @@ export class ScoreCardComponent implements OnInit {
         score: item.recommendation_score,
         wage: item.mean_quarterly_wage_hourly,
         training: item.training_success_rate,
-        demand: this.mapDemand(item.training_type), 
+        demand: this.mapDemand(item.recommendation_demand), 
       }));
     });
   }
 
-  //Modificar cuando este el verdadero caso de la demanda
-  mapDemand(demand: string | null): 'null' | 'NLJ/ETP' | 'CHE' {
-    if (demand === null) return 'null';
+  mapDemand(demand: string | null): 'Low demand' | 'High demand' {
     switch (demand) {
-      case 'NLJ/ETP': return 'NLJ/ETP';
-      case 'CHE': return 'CHE';
-      default: return 'null'; 
+      case 'High demand':
+        return 'High demand';
+      default:
+        return 'Low demand'; 
     }
   }
 }
-

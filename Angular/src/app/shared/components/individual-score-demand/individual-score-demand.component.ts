@@ -6,7 +6,7 @@ import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
   styleUrls: ["./individual-score-demand.component.scss"],
 })
 export class IndividualScoreDemandComponent implements OnChanges {
-  @Input() demand: "null" | "NLJ/ETP" | "CHE" = "null";
+  @Input() demand: "Low demand" | "High demand" | "Medium demand" = "Low demand";
   bars: number[] = [0, 0, 0];
 
   ngOnChanges(changes: SimpleChanges) {
@@ -17,17 +17,17 @@ export class IndividualScoreDemandComponent implements OnChanges {
 
   updateBars() {
     switch (this.demand) {
-      //Caso de HIGH
-      case "CHE":
+      case "High demand":
         this.bars = [1, 1, 1];
         break;
-      //Caso de medio
-      case "NLJ/ETP":
+      // Este caso será implementado cuando la base de datos sea modificada
+      /*
+      case "Medium demand":
         this.bars = [1, 1, 0];
         break;
-      case "null":
+      */
+      case "Low demand":
       default:
-        //Caso de bajo
         this.bars = [1, 0, 0];
         break;
     }
