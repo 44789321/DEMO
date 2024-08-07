@@ -1,9 +1,10 @@
 <mat-card class="score-card">
   <mat-card-content>
-    <p class="name">
-      Wage 
-      <span class="score-text">${{ wage }}/hour</span>
-    </p>
+    <!-- <p class="name" *ngIf="name">
+      {{name}} 
+      <span class="score-text" *ngIf="wage">{{ wage }}</span>
+    </p> -->
+    <div class="w-full flex-center"><span>{{ name }}</span><span class="spacer"></span> <span>{{ wage }}</span></div>
     <div class="score-container">
       <div class="progress-bar-container">
         <div class="progress-bar" [style.width.%]="getProgressWidth()"></div>

@@ -1,11 +1,10 @@
 <mat-card class="score-card">
-    <mat-card-content>
-      <p class="name">Job Demand <span class="score-text">{{ demand }}</span></p>
-      <div class="score-container">
-        <div *ngFor="let bar of bars; let i = index" [ngClass]="getBarClass(i)">
-          &nbsp;
-        </div>
+  <mat-card-content>
+    <div class="w-full flex-center"><span>{{ name }}</span><span class="spacer"></span> <span>{{ demand }}</span></div>
+    <div class="score-container">
+      <div *ngFor="let bar of bars; let i = index" [ngClass]="getBarClass(i)">
+        &nbsp;
       </div>
-    </mat-card-content>
-  </mat-card>
-  
+    </div>
+  </mat-card-content>
+</mat-card>

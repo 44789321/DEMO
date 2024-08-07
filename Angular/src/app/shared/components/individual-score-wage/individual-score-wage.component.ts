@@ -6,10 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./individual-score-wage.component.scss']
 })
 export class IndividualScoreWageComponent {
-  @Input() wage: number = 0;
+  @Input() wage: string = '';
+  @Input() name: string = '';
 
   getProgressWidth(): number {
-    const maxWage = 20;
-    return (this.wage / maxWage) * 100;
+    // const maxWage = 20;
+    // return (this.wage / maxWage) * 100;
+    return 100;
   }
 }

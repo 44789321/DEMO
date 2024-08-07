@@ -6,7 +6,9 @@ import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
   styleUrls: ["./individual-score-demand.component.scss"],
 })
 export class IndividualScoreDemandComponent implements OnChanges {
-  @Input() demand: "null" | "NLJ/ETP" | "CHE" = "null";
+
+  @Input() name: string = '';
+  @Input() demand: any; // "null" | "NLJ/ETP" | "CHE" = "null";
   bars: number[] = [0, 0, 0];
 
   ngOnChanges(changes: SimpleChanges) {
@@ -16,13 +18,13 @@ export class IndividualScoreDemandComponent implements OnChanges {
   }
 
   updateBars() {
-    switch (this.demand) {
+    switch (this.demand.toUpperCase()) {
       //Caso de HIGH
-      case "CHE":
+      case "CHE": case 'HIGH':
         this.bars = [1, 1, 1];
         break;
       //Caso de medio
-      case "NLJ/ETP":
+      case "NLJ/ETP":  case 'MODERATE':
         this.bars = [1, 1, 0];
         break;
       case "null":

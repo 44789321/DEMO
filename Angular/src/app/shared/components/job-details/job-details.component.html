@@ -15,10 +15,10 @@
         </div>
         <div class="w-full flex-center scoreCardsContainer">
             <app-individual-score-card name="Recommendation score" [score]="scoreCard.recommendation_score"></app-individual-score-card>
-            <app-individual-score-card name="Wage" [score]="scoreCard.mean_quarterly_wage_hourly"></app-individual-score-card>
-            <app-individual-score-card name="Training duration" [score]="scoreCard.program_length_weeks"></app-individual-score-card>
-            <app-individual-score-card name="Training completion" [score]="(scoreCard.training_success_rate * 10)"></app-individual-score-card>
-            <app-individual-score-card name="Job demand" [score]="3"></app-individual-score-card>
+            <app-individual-score-wage name="Wage" [wage]="'$'+scoreCard.mean_quarterly_wage_hourly+' / hour'"></app-individual-score-wage>
+            <app-individual-score-wage name="Training duration" [wage]="scoreCard.program_length_weeks+' months'"></app-individual-score-wage>
+            <app-individual-score-wage name="Training completion" [wage]="(scoreCard.training_success_rate * 100).toFixed(0) + '%'"></app-individual-score-wage>
+            <app-individual-score-demand name="Job demand" demand="Moderate"></app-individual-score-demand>
         </div>
         <mat-card class="w-full cardInterested">
             <h1 class="w-full txtInterested" style="color: white;">
