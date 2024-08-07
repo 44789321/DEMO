@@ -20,11 +20,11 @@ export class IndividualScoreDemandComponent implements OnChanges {
   updateBars() {
     switch (this.demand.toUpperCase()) {
       //Caso de HIGH
-      case "CHE": case 'HIGH':
+      case "CHE": case 'HIGH DEMAND':
         this.bars = [1, 1, 1];
         break;
       //Caso de medio
-      case "NLJ/ETP":  case 'MODERATE':
+      case "NLJ/ETP":  case 'MODERATE DEMAND':
         this.bars = [1, 1, 0];
         break;
       case "null":

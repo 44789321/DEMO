@@ -34,7 +34,7 @@ const routes: Routes = [
     component: ToolbarComponent,
     children: [
 
-      // { path: 'dashboard', component: DashboardComponent },
+      { path: 'dashboard', component: DashboardComponent },
       { path: 'home', component: VistaComponent },
       { path: 'privacy', component: PrivacyComponent},
       { path: 'dashboard', component: DashboardComponent},
