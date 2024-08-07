@@ -33,6 +33,7 @@
 .cardInterested {
     background-color: rgb(0, 0, 78);
     margin-top: 3rem;
+    margin-bottom: 9rem;
 }
 
 .actionsContainer {
@@ -97,5 +98,11 @@
 
 .scoreCardsContainer {
     margin-top: 2rem;
-    gap: 2rem;
+    // gap: 2rem;
+    justify-content: space-between;
+}
+
+.scoreCardInd {
+    width: 32.5%;
+    margin-top: 1rem;
 }

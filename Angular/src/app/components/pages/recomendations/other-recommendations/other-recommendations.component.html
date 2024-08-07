@@ -1,4 +1,4 @@
-<div class="w-full flex-center">
+<div class="w-full flex-center" style="margin-bottom: 10rem;">
     <div class="w-full flex-center">
         <div class="flex-center">
             <mat-form-field appearance="outline">
@@ -18,7 +18,7 @@
     </div>
     <div class="w-full flex-center scoreCardsContainer" *ngIf="otherRecomendations.length > 0">
         <app-individual-score-card *ngFor="let scoreCard of otherRecomendations"
-            [name]="scoreCard.recommended_soc_title"
+            [name]="scoreCard.recommended_soc_title" class="scoreCardInd"
             [score]="scoreCard.recommendation_score" [route]="'/jobs/'+scoreCard.recommended_soc_code"></app-individual-score-card>
     </div>
 </div>

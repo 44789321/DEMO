@@ -36,4 +36,8 @@ export class ReadyComponent {
       }
     });
   }
+
+  handleBack() {
+    this.router.navigate([`jobs/${this.idJob}`]);
+  }
 }

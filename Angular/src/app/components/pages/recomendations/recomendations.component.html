@@ -12,19 +12,25 @@
             <div class="headerRecommended w-full">
                 <mat-icon>hotel_class</mat-icon>Top recommended!
             </div>
-            <div class="bodyRecommended w-full">
-                <h1 class="mainTxt">Logistician</h1>
-                <h2 class="descrElipsis  w-75">Logisticians oversees the process of moving goods from production to
-                    consumption an important thing bla bla bla bla bla bla bla bla bla bla</h2>
-                <div class="flex-center skillsContainer">
-                    <div *ngFor="let btnSk of SkillsBtns">
-                        <button mat-mini-fab class="btnMinFb"><mat-icon>{{btnSk.icon}}</mat-icon></button>
-                        {{btnSk.desc}}
+            <div class="w-full flex-center">
+                <div class="bodyRecommended w-75 flex-center">
+                    <h1 class="w-full">Logistician</h1>
+                    <h2 class="descrElipsis  w-full">Logisticians oversees the process of moving goods from production
+                        to
+                        consumption an important thing bla bla bla bla bla bla bla bla bla bla</h2>
+                    <div class="w-full flex-center skillsContainer">
+                        <div *ngFor="let btnSk of SkillsBtns">
+                            <button mat-mini-fab class="btnMinFb"><mat-icon>{{btnSk.icon}}</mat-icon></button>
+                            {{btnSk.desc}}
+                        </div>
                     </div>
                 </div>
-                <button class="gradient-button flex-center" routerLink="/jobs/123"><span class="txtBtn-gradient">View
-                        details</span>
-                    <mat-icon>arrow_forward</mat-icon></button>
+                <div class="w-25 flex-center">
+                    <button class="gradient-button flex-center" routerLink="/jobs/123"><span
+                            class="txtBtn-gradient">View
+                            details</span>
+                        <mat-icon>arrow_forward</mat-icon></button>
+                </div>
             </div>
         </div>
         <div class="w-full" style="margin-top: 2rem;">

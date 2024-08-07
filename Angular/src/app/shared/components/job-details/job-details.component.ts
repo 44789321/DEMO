@@ -18,7 +18,31 @@ export class JobDetailsComponent {
     Logisticians play a crucial role in coordinating transportation, storage, and distribution, all aimed at optimizing the supply chain and 
     meeting customer demands. They utilize a range of tools and technologies to streamline operations and maximize efficiency across various industries.`
   };
-  scoreCard: any = {};
+  scoreCard: any = {
+    "glb_id": 9042013,
+    "education_level": 3,
+    "county_fips": 18097,
+    "rural_urban_score": 3,
+    "previous_soc_code": 411011,
+    "previous_soc_title": "First-Line Supervisors of Retail Sales Workers",
+    "previous_soc_category": "Sales and Related Occupations",
+    "recommended_soc_code": 414011,
+    "recommended_soc_title": "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",
+    "recommended_soc_category": "Sales and Related Occupations",
+    "recommendation_rank_revised": 23,
+    "recommendation_score": 10,
+    "recommendation_demand": "High demand",
+    "mean_quarterly_wage_hourly": 23,
+    "training_type": "CHE",
+    "program_id": null,
+    "program_degree_level": "Award of at least 1 but less than 2 academic years",
+    "program_name": "Undergraduate Certificate in Professional Sales ",
+    "program_length_weeks": 18,
+    "training_success_rate": 0.80,
+    "create_timestamp": {
+      "value": "2024-04-01T19:49:36.939314000Z"
+    }
+  };
 
   constructor(private aRoute: ActivatedRoute,
     private toastr: ToastrService,
@@ -44,7 +68,7 @@ export class JobDetailsComponent {
   }
 
   handleReady() {
-    
+
     this.router.navigate([`/jobs/${this.idJob}/ready`]);
   }
 

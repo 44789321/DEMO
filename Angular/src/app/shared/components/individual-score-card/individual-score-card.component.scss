@@ -1,5 +1,6 @@
 .score-card {
-  width: 400px;
+  // width: 400px;
+  // width: 30%;
   max-width: 100%;
   padding: 16px;
   height: 100%;
@@ -35,15 +36,15 @@
 }
 
 .score-container div.filled-red {
-  background-color: red;
+  background-color: var(--secondary-color);;
 }
 
 .score-container div.filled-yellow {
-  background-color: yellow;
+  background-color: var(--secondary-color);;
 }
 
 .score-container div.filled-blue {
-  background-color: blue;
+  background-color: var(--secondary-color);
 }
 
 .score-container div.empty {

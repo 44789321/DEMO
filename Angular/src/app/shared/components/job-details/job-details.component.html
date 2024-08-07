@@ -14,11 +14,11 @@
             </div>
         </div>
         <div class="w-full flex-center scoreCardsContainer">
-            <app-individual-score-card name="Recommendation score" [score]="scoreCard.recommendation_score"></app-individual-score-card>
-            <app-individual-score-wage name="Wage" [wage]="'$'+scoreCard.mean_quarterly_wage_hourly+' / hour'"></app-individual-score-wage>
-            <app-individual-score-wage name="Training duration" [wage]="scoreCard.program_length_weeks+' months'"></app-individual-score-wage>
-            <app-individual-score-wage name="Training completion" [wage]="(scoreCard.training_success_rate * 100).toFixed(0) + '%'"></app-individual-score-wage>
-            <app-individual-score-demand name="Job demand" [demand]="scoreCard.recommendation_demand"></app-individual-score-demand>
+            <app-individual-score-card class="scoreCardInd" name="Recommendation score" [score]="scoreCard.recommendation_score"></app-individual-score-card>
+            <app-individual-score-wage class="scoreCardInd" name="Wage" [wage]="'$'+scoreCard.mean_quarterly_wage_hourly+' / hour'"></app-individual-score-wage>
+            <app-individual-score-wage class="scoreCardInd" name="Training duration" [wage]="scoreCard.program_length_weeks+' months'"></app-individual-score-wage>
+            <app-individual-score-wage class="scoreCardInd" name="Training completion" [wage]="(scoreCard.training_success_rate * 100).toFixed(0) + '%'"></app-individual-score-wage>
+            <app-individual-score-demand class="scoreCardInd" name="Job demand" [demand]="scoreCard.recommendation_demand"></app-individual-score-demand>
         </div>
         <mat-card class="w-full cardInterested">
             <h1 class="w-full txtInterested" style="color: white;">
