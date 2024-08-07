@@ -58,8 +58,10 @@ export class JobDetailsComponent {
 
   getJobDetails() {
     this._mainSvc.getJobDetails(this.idJob).subscribe((resp: any) => {
-      if (resp.Exito == 'true')
+      if (resp.Exito == 'true') {
         this.scoreCard = resp.Data[0];
+        this.jobDetail.title = this.scoreCard.recommended_soc_title;
+      }
     });
   }
 
@@ -68,7 +70,6 @@ export class JobDetailsComponent {
   }
 
   handleReady() {
-
     this.router.navigate([`/jobs/${this.idJob}/ready`]);
   }
 

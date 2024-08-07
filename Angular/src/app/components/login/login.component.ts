@@ -42,7 +42,7 @@ export class LoginComponent {
       if (resp.Exito == 'true') {
         localStorage.clear();
         this._context.setInformation(resp.Data[0]);
-        this.toastr.success(`Hola ${resp.Data[0].first_name} ${resp.Data[0].last_name}`, 'Bienvenido');
+        this.toastr.success(`Hi ${resp.Data[0].first_name} ${resp.Data[0].last_name}`, 'Welcome');
         this.router.navigate(['/home']);
       }
     });

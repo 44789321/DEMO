@@ -6,8 +6,9 @@
         [formGroup]="clientCredentials"
         (ngSubmit)="login()"
         class="w-full flex-center"
+        style="margin-top: 2rem;"
       >
-        <mat-form-field appearance="fill" class="w-full">
+        <mat-form-field appearance="outline" class="w-full">
           <mat-label>E-mail address</mat-label>
           <input
             matInput
@@ -16,7 +17,7 @@
             maxlength="64"
           />
         </mat-form-field>
-        <mat-form-field appearance="fill" class="w-full">
+        <mat-form-field appearance="outline" class="w-full">
           <mat-label>Password</mat-label>
           <input
             [type]="showPsw ? 'text' : 'password'"

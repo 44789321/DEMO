@@ -21,7 +21,7 @@
 
 .txtClipped {
   scale: 3;
-  background: linear-gradient(90deg, rgba(163, 161, 161, 0.4892550770308123) 25%, rgba(0, 131, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(163, 161, 161, 0.1)0, rgba(0, 131, 255, 1) 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
