@@ -27,9 +27,9 @@ export class IndividualScoreDemandComponent implements OnChanges {
       case "NLJ/ETP":  case 'MODERATE DEMAND':
         this.bars = [1, 1, 0];
         break;
-      case "null":
+      */
+      case "Low demand":
       default:
-        //Caso de bajo
         this.bars = [1, 0, 0];
         break;
     }
