@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ReadyComponent {
 
   phone = '3178675309';
-  email = 'jschmoegmail.com';
+  email = String(localStorage.getItem('email')); //'jschmoegmail.com';
   idJob = '0';
 
   constructor(private dialog: MatDialog,

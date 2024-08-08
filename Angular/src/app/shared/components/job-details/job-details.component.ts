@@ -38,7 +38,7 @@ export class JobDetailsComponent {
     "program_degree_level": "Award of at least 1 but less than 2 academic years",
     "program_name": "Undergraduate Certificate in Professional Sales ",
     "program_length_weeks": 18,
-    "training_success_rate": 0.80,
+    "training_success_rate": 0.82,
     "create_timestamp": {
       "value": "2024-04-01T19:49:36.939314000Z"
     }

@@ -72,3 +72,16 @@
     scale: 1.05;
     cursor: pointer;
 }
+
+.assestmentContainer {
+    justify-content: space-between;
+    background-color: #fffce4;
+    padding: 25px 12px 12px 12px;
+    border: 2px solid #fff396;
+    border-radius: 20px;
+
+    mat-icon {
+        color: var(--primary-color);
+        transform: translateY(4px);
+    }
+}
