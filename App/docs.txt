@@ -17,3 +17,11 @@
 En caso de error de credenciales ejecutar el siguiente comando con la ruta del json de credenciales, Git protege esta parte y no permite subirlo. 
 
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/lenininfomedia/Documents/Repos/API_WRE/wre-poc-f25a5217302f.json"
+
+
+_____________________ GCLoud Cache methos ---------------------------
+
+gsutil -m setmeta -r -h "Cache-Control:no-store" gs://wre-poc_cloudbuild/source/
+gsutil -m setmeta -r -h "Cache-Control:no-store" gs://wre-poc_cloudbuild/
+
+gcloud compute backend-services update wre-poc-service --cache-mode=CACHE_ALL_STATIC

@@ -37,17 +37,17 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'home', component: VistaComponent },
       { path: 'privacy', component: PrivacyComponent},
-      { path: 'dashboard', component: DashboardComponent},
       { path: 'pivot', component: PivotComponent},
       { path: 'claims', component: ClaimsComponent},
+      
       { path: 'recommendations', component: RecomendationsComponent},
       { path: 'jobs/:id', component: JobDetailsComponent},
       { path: 'jobs/:id/ready', component: ReadyComponent},
-      { path: 'vista', component: VistaComponent},
-      { path: 'jobs/:id/information-sent', component: InformationSentComponent},       
-      { path: 'scorecard', component: ScoreCardComponent},
-      { path: 'individual', component: IndividualScoreCardComponent},
-      { path: 'wage', component: IndividualScoreWageComponent},
+      { path: 'jobs/:id/information-sent', component: InformationSentComponent},  
+      // { path: 'vista', component: VistaComponent},    // se cambió por home, puede borrarse 
+      // { path: 'scorecard', component: ScoreCardComponent}, // pruebas, puede borrarse
+      // { path: 'individual', component: IndividualScoreCardComponent},  // pruebas, puede borrarse
+      // { path: 'wage', component: IndividualScoreWageComponent}, // pruebas, puede borrarse
 
 
       {
